@@ -2,6 +2,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
+
+  console.log("App executed");
   return (
     <View style={styles.container}>
       <Text>Done with it </Text>
@@ -13,7 +15,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#971531ff',
+    backgroundColor: '#fcf9faff',
     alignItems: 'center',
     justifyContent: 'center',
   },
