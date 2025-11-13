@@ -1,26 +1,35 @@
 import {
   StyleSheet,
-  Text,
-  TouchableNativeFeedback,
-  View,
+  Dimensions,
   SafeAreaView,
-  Image,
+  Button,
+  Platform,
+  StatusBar,
+  View
 } from "react-native";
-import { Button } from "react-native-web";
+
 
 export default function App() {
+console.log(Dimensions.get("screen"));
+
+
   return (
     <SafeAreaView style={styles.container}>
-      <Button title="Click Me" onPress={() => alert("Button Pressed!")} />
+    <View style={{
+      backgroundColor:"blue",
+      height:"30%",
+      width:"100%",
+    }}
+    ></View>
     </SafeAreaView>
   );
 }
+const containerStyle = {backgroundColor:"orange"};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
 });
