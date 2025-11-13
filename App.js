@@ -1,35 +1,35 @@
-import {
-  StyleSheet,
-  Dimensions,
-  SafeAreaView,
-  Button,
-  Platform,
-  StatusBar,
-  View
-} from "react-native";
-
+import { View } from "react-native";
 
 export default function App() {
-console.log(Dimensions.get("screen"));
-
-
   return (
-    <SafeAreaView style={styles.container}>
-    <View style={{
-      backgroundColor:"blue",
-      height:"30%",
-      width:"100%",
-    }}
-    ></View>
-    </SafeAreaView>
+    <View
+      style={{
+        backgroundColor: "#fff",
+        flex: 1,
+      }}
+    >
+      <View
+        style={{
+          backgroundColor: "dodgerblue",
+          width: 100,
+          height: 100,
+        }}
+      />
+       <View
+        style={{
+          backgroundColor: "gold",
+          width: 100,
+          height: 100,
+        }}
+      />
+       <View
+        style={{
+          backgroundColor: "tomato",
+          width: 100,
+          height: 100,
+        }}
+      />
+    </View>
+    
   );
 }
-const containerStyle = {backgroundColor:"orange"};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-  },
-});
