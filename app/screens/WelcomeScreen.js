@@ -20,14 +20,14 @@ const styles = StyleSheet.create({
     justifyContent: "flex-start",
   },
   loginButton: {
-    width: "300%",
+    width: "100%",
     height: 70,
   },
  regiterButton: {
     width: "300%",
-    height: 70,
+    height: 50,
   },
-});
+})1
 
 export default WelcomeScreen;
  
