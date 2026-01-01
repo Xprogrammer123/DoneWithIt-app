@@ -21,11 +21,11 @@ const styles = StyleSheet.create({
   },
   loginButton: {
     width: "100%",
-    height: 70,
+    height: 50,
   },
  regiterButton: {
     width: "300%",
-    height: 50,
+    height: 30,
   },
 })1
 
